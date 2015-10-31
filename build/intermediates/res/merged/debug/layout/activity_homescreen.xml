@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Homescreen">
+
+
+    <TextView
+        android:id="@+id/name_of_conference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingTop="16dp"
+        android:text="@string/nameOfConference"
+        android:textColor="@color/almostBlack"
+        android:textSize="34sp" />
+
+    <View
+        android:id="@+id/separating_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/green" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="6dp"
+        android:text="@string/welcome"
+        android:textColor="@color/almostBlack"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="logo"
+        android:maxHeight="70dp"
+        android:maxWidth="70dp"
+        android:src="@drawable/sv_logo_v3" />
+
+
+    <Button
+        android:id="@+id/tasks_button_front_page"
+        style="@style/stylesForButtons"
+        android:background="@drawable/button_main_screen"
+        android:onClick="goToTasks"
+        android:text="@string/tasks" />
+
+    <Button
+        android:id="@+id/program_button_front_page"
+        style="@style/stylesForButtons"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_main_screen"
+        android:onClick="goToProgram"
+        android:text="@string/program" />
+
+    <Button
+        android:id="@+id/find_sv_button_front_page"
+        style="@style/stylesForButtons"
+        android:background="@drawable/button_main_screen"
+        android:onClick="goToMaps"
+        android:text="@string/findSV" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:weightSum="1"
+        android:textColor="@color/almostBlack">
+
+        <RelativeLayout
+            android:id="@+id/relLay1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            >
+
+            <Switch
+                android:id="@+id/trackingSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:checked="false"
+                android:paddingBottom="10dp"
+                android:textOn="@string/trackOn"
+                android:textOff="@string/trackOff"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+
+                <TextView
+                    android:id="@+id/trackingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tracking"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLay2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <SeekBar
+                android:id="@+id/trackingSeekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:indeterminate="false"
+                android:max="2"
+                android:maxHeight="1000dp"
+                android:paddingBottom="10dp"
+                android:progress="0" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:id="@+id/setStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yStatus"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/statusText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout><!-- From: file:/C:/Users/TPRalle/AndroidStudioProjects/Exam_Group_11/app/src/main/res/layout/activity_homescreen.xml -->

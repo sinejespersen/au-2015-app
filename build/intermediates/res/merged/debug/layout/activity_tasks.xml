@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="info.androidhive.materialtabs.fragments.OneFragment">
+
+    <TextView
+        android:id="@+id/name_of_conference"
+        android:text="@string/nameOfConference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:textColor="@color/almostBlack"
+        android:layout_gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingTop="16dp"
+        />
+
+    <View
+        android:id="@+id/separating_line"
+        android:layout_below="@id/name_of_conference"
+        android:background="@color/green"
+        android:layout_width = "fill_parent"
+        android:layout_height="1dip"
+        android:layout_centerVertical ="true"
+        />
+
+    <TextView
+        android:id="@+id/myTasks"
+        android:text="@string/myTasks"
+        android:layout_below="@id/separating_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/almostBlack"
+        android:paddingTop="6dp"
+        android:layout_gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        style="@style/tabs"
+        app:tabGravity="fill"
+        app:tabMode="fixed"/>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/white" />
+</LinearLayout><!-- From: file:/C:/Users/TPRalle/AndroidStudioProjects/Exam_Group_11/app/src/main/res/layout/activity_tasks.xml -->

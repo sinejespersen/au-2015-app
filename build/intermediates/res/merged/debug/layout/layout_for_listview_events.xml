@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        />
+
+    <TextView
+        style="@style/MyMaterialTheme.howTextviewsLooks"
+        android:id="@+id/textview_name"
+        android:layout_toRightOf="@id/checkBox"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/textview_location"
+        android:layout_below="@id/textview_name"
+        android:layout_toRightOf="@id/checkBox"
+        style="@style/MyMaterialTheme.howTextviewsLooks"
+        />
+
+    <TextView
+        android:id="@+id/textview_time"
+        android:layout_toRightOf="@id/textview_location"
+        android:layout_below="@id/textview_name"
+        android:paddingLeft="16dp"
+        style="@style/MyMaterialTheme.howTextviewsLooks"
+        />
+
+</RelativeLayout><!-- From: file:/C:/Users/TPRalle/AndroidStudioProjects/Exam_Group_11/app/src/main/res/layout/layout_for_listview_events.xml -->
