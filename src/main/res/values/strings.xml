@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">SV</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Locate</string>
+
+    <string name="nameOfConference">Critical Alternatives</string>
+
+    <string name="schedule">Schedule</string>
+    <string name="tasks">Today\'s tasks</string>
+    <string name="program">Program</string>
+    <string name="findSV">Find SV</string>
+
+    <string name="title_activity_schedule">Schedule</string>
+
+    <string name="monday">M</string>
+    <string name="tuesday">T</string>
+    <string name="wednesday">W</string>
+    <string name="thursday">T</string>
+    <string name="friday">F</string>
+
+    <string name="title_activity_tasks">Tasks</string>
+    <string name="myTasks">The tasks for today are displayed here</string>
+    <string name="title_activity_program">Program</string>
+
+    <string name="welcome">Welcome to the student volunteer app!</string>
+
+    <string name="yStatus">Your status:</string>
+    <string name="statusFree">Free</string>
+    <string name="statusOccu">Occup.</string>
+    <string name="statusNotAvailab">Not avbl.</string>
+    <string name="tracking">Tracking</string>
+    <string name="trackOn">On</string>
+    <string name="trackOff">Off</string>
+    <string name="trackNotifyTitle">SV application</string>
+    <string name="trackNotifyTxt">Tracking is on.</string>
+
+    <string name="toastOnSave">No internet connection. Changes not saved. Please restore connection.</string>
+    <string name="toastOnMaps">No internet connection. Please restore connection before opening maps.</string>
+    <string name="toastOnIni">No internet connection. Please restore connection.</string>
+</resources>
